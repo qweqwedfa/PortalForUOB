@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBM Annual Report Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #20339e;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #9ba7e1;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #575757;
+            color: white;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .login-form {
+            max-width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .login-form h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .login-form input {
+            width: 93%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #1e2295;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-form button:hover {
+            background-color: #070f07;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>IBM Annual Report Analysis</h1>
+    </header>
+    <nav>
+        <a href="portal_test_1.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#login">Login</a>
+    </nav>
+    <main>
+        <section id="login">
+            <div class="login-form">
+                <h2>Login</h2>
+                <form action="../../demo" method="get">
+                    <input type="text" name="username" placeholder="Username" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Website</p>
+    </footer>
+
+    <!-- Watson Assistant Embed Script -->
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "deb7869e-8907-435c-b06f-60fa402dc1cd",
+            region: "eu-gb",
+            serviceInstanceID: "da0f3f88-dd48-426f-862c-d548bc5a1faa",
+            onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+            const t = document.createElement('script');
+            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + 
+                    (window.watsonAssistantChatOptions.clientVersion || 'latest') + 
+                    "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+        });
+    </script>
+</body>
+</html>
