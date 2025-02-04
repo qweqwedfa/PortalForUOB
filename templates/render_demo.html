@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="container">
+    <h1>动态数据页面</h1>
+    
+    <ul>
+      {% for item in items %}
+        <li>{{ item.name }} - {{ item.description }}</li>
+      {% endfor %}
+    </ul>
+  
+    <form method="post">
+      {% csrf_token %}
+      <label for="name">名称:</label>
+      <input type="text" id="name" name="name">
+      <label for="description">描述:</label>
+      <input type="text" id="description" name="description">
+      <button type="submit">添加</button>
+    </form>
+  </div>
+{% endblock %}
